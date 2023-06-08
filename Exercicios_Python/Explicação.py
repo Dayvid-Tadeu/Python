@@ -103,4 +103,35 @@ import random
 num = random.randint(1, 10)
 print(num)
 
-# Lição apartir do desafio 21, pois os outros foram corrigidos
+# MANIPULANDO TEXTOS - AULZ 09
+frase = 'Curso em Video Python'
+print(frase[9])      # Aparece a letra 'V'
+print(frase[9:13])   # Aparece 'Vide' pois a letra 'O' ele tira
+print(frase[9:21:2]) # Aparece 'VdoPto' pois pula de 2 em 2
+print(frase[:5])     # Aparece 'Curso' pois vai do primeiro até o caractere 5
+print(frase[15:])    # Aparece 'Python'
+print(frase[9::3])   # Aparece 'VePh' vai do V até o final pulando de 3 em 3.
+
+#len vem de lenght 'tamanho"
+print(len(frase))             # Mostra o tamanho da frase
+print(frase.count('o'))       # Mostra a quantas vezes aparece a letra 'O'
+print(frase.count('o',0, 13)) # Mostra a quantas vezes aparece a letra 'O' no intervelo dos 13 primeiros caracateres
+print(frase.find('deo'))      # Mostra onde começa 'deo' dentro da cadeia de caracteres
+print(frase.replace('Python', 'Android')) # Ele troca a palavra 'Python' por 'Android' dentro ada cadeia de caracateres
+print(frase.upper())          # Mostra a frase toda com letras maiusculas
+print(frase.lower())          # Mostra a frase toda com letras minusculas
+print(frase.strip())          # Retira os espaços não usados no começo e no fim de uma cedeia de caracteres
+print(frase.rstrip())         # Retira os espaços não usados na direita
+print(frase.rstrip())         # Retira os espaços da esquerda
+print(frase.split())          # Divide a frase em que cada palavra é uma nova cadeia de caracter
+print(frase.find('Android'))  # Vai procrar a palavra  na cadeia de caracteres e retornará -1 se não tiver
+
+
+frase = 'Curso em Video Python'
+dividido = frase.split()
+print(dividido[0]) # Mostra 'Curso'
+print(dividido[1]) # Mostra 'em'
+print(dividido[2]) # Mostra 'Video'
+print(dividido[3]) # Mostra 'Python'
+
+# Começar o Desafio 22
