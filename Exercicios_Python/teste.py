@@ -1,6 +1,6 @@
-frase = 'Curso em Video Python'
-dividido = frase.split()
-print(dividido[0])
-print(dividido[1])
-print(dividido[2])
-print(dividido[3])
+x = int(input('Digite um numero: '))
+num = str(x)
+print('Milhar: {}'.format(num[3]))
+print('Centena: {}'.format(num[2]))
+print('Dezena: {}'.format(num[1]))
+print('Unidade: {}'.format(num[0]))
